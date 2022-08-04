@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>menu responsive</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("toggle-nav").click(function(){
+				$(".menu ul li").slideToggle("slow");
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav class="menu">
+		<a href="" class="toggle-nav">&#9776</a>
+		<ul>
+			<li><a href="" class="acive">Home</a></li>
+			<li><a href="">News</a></li>
+			<li><a href="">Privacy</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+		<div class="social">
+			<a href=""><i class="fab fa-facebook-f"></i></a>
+			<a href=""><i class="fab fa-twitter-square"></i></a>
+			<a href=""><i class="fab fa-youtube"></i></a>
+			<a href=""><i class="fab fa-instagram"></i></a>
+			<a href=""><i class="fab fa-linkedin"></i></a>
+		</div>
+	</nav>
+</body>
+</html>
